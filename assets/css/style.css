@@ -202,6 +202,15 @@ h2::after {
     padding-right: 10px;
 }
 
+.img-User-login {
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
 .banner-loja {
     display: flex;
     position: relative;
@@ -304,7 +313,7 @@ h2::after {
     margin-right: 20px;
 }
  .desconto {
-    display: inline-block;
+    display: inline;
     position: relative;
     float: right;
     width: 80px;
