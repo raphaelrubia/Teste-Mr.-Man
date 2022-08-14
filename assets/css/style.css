@@ -1,6 +1,7 @@
 :root {
     --cor-primaria: rgb(236, 236, 236);
     --cor-secundaria:  #ffffff;
+    --cor-tercearia: rgb(218, 218, 218);
     --gap: 20px
 }
 
@@ -69,7 +70,7 @@ h2::after {
     display: flex;
     position: relative;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor-tercearia);
 }
 
 .links-menu ul li a {
@@ -128,7 +129,7 @@ h2::after {
 }
 
 .img-button-menu {
-    background: var(--cor-secundaria);
+    background: var(--cor-tercearia);
     max-width: 60px;
     max-height: 70px;
     justify-content: center;   
@@ -157,13 +158,15 @@ h2::after {
 .caixa-pesquisa {
     display: flex;
     position: relative;
-    width: 250px;
-    height: 30px;
-    margin-top: 20px;
+    width: 230px;
+    height: 20px;
+    margin: auto;
     padding-top: 1px;
     padding-bottom: 1px;
-    padding-right: 2px;
-    padding-left: 24px;   
+    padding-left: 5px;   
+    border: 1px solid;
+    border-radius: 10px;
+    background: var(--cor-tercearia);
 }
 
 .pesquisa-txt {
@@ -171,19 +174,18 @@ h2::after {
     font-family: sans-serif;
     color: black;
     cursor:text;
-    border: 1px solid;
-    border-right: none;
-    
+    border: transparent;
+    background: var(--cor-tercearia);
 }
 
 .lupa {
     display:flex;
     position: relative;
     float:right;
-    background:white;
+    background: var(--cor-tercearia);
     cursor: pointer;
-    border: 1px solid;
-    width: 30px;
+    width: 20px;
+    border: transparent;
 }
 
 .lupa-caixa-texto {
@@ -877,7 +879,6 @@ h2::after {
     .menu-principal-links {
         display: flex;
         position: fixed;
-        grid-template-columns: repeat(4, 1fr);
         width: 100%;
         height: 70px;
     }
@@ -885,23 +886,43 @@ h2::after {
     .logo {
         display: flex;
         position: relative;
+        margin-right: auto;
         order: 1;
+    }
+
+    .caixa-pesquisa {
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+
+    .img-carrinho {
+        margin-left: auto;
+        margin-right: auto;
+        order: 3;
+    }
+
+    .img-login {
+        margin-left: auto;
+        margin-right: auto;
+        order: 4;
     }
 
     .button-menu {
         display: flex;
         position: relative;
-        right: 15px;
-        order: 3;
+        width: 60px;
+        margin-left: auto;
+        order: 5;
     }
 
     .links {
         display: block;
         position: relative;
-        width: 100%;
+        width: 1%;
         height: 70px;
         margin: 0;
-        order: 2;
+        order: 6;
     }
 
     .links-menu-category {
@@ -927,14 +948,6 @@ h2::after {
         justify-content: center;
         background: var(--cor-secundaria);
         transition: all 0.5s;
-    }
-
-    .caixa-pesquisa {
-        display: none;
-    }
-
-    .img-carrinho {
-        display: none;
     }
     
     .conteiner {
