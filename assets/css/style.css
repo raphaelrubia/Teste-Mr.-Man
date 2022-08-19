@@ -155,17 +155,25 @@ h2::after {
     position: absolute;
 }   
 
+.caixa-pesquisa-txt {
+    display: flex;
+    position: relative;
+    max-width: 250px;
+    max-height: 20px;
+}
+
 .caixa-pesquisa {
     display: flex;
     position: relative;
-    width: 230px;
-    height: 20px;
-    margin: auto;
+    max-width: 400px;
+    max-height: 40px;
+    margin: 15px 10px 15px 10px;
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 5px;   
     border: 1px solid;
     border-radius: 10px;
+    align-items: center;
     background: var(--cor-tercearia);
 }
 
@@ -175,42 +183,89 @@ h2::after {
     color: black;
     cursor:text;
     border: transparent;
+    max-width: 200px;
     background: var(--cor-tercearia);
 }
 
 .lupa {
     display:flex;
     position: relative;
-    float:right;
+    float: left;
     background: var(--cor-tercearia);
     cursor: pointer;
-    width: 20px;
+    max-width: 40px;
+    padding-right: 10px;
     border: transparent;
 }
 
 .lupa-caixa-texto {
     display: flex;
     position: relative;
-    width: 20px;
-    height: 17px;   
+    max-width: 20px;
+    max-height: 17px;   
+}
+
+.img-carrinho{
+    display: flex;
+    position: relative;
+    max-width: 100px;
+    max-height: 40px;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
 }
 
 .img-carrinho-compra {
     display: flex;
     position: relative;
-    width: 30px;
-    height: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width:30px;
+    height:30px;
+    margin: auto;
+    
+}
+
+.texto-carrinho {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.img-login {
+    display: flex;
+    position: relative;
+    max-width: 100px;
+    max-height: 40px;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
 }
 
 .img-User-login {
     display: flex;
     position: relative;
     width: 30px;
-    height: 60px;
-    padding-left: 20px;
-    padding-right: 10px;
+    height: 30px;
+    margin: auto;
+}
+
+.texto-login {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
 }
 
 .banner-loja {
@@ -351,13 +406,13 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background: #191919;
 }
 
 .texto-club-mrman {
     display: block;
-    margin: 20px;
+    margin: 70px;
     border-right: 1px solid white;
     overflow-y: auto;
 }
@@ -376,7 +431,7 @@ h2::after {
 .email-club-mrman {
     display: block;
     height: 100%;
-    margin: 20px;
+    margin: 70px;
 }
 
 .email-texto-club {
@@ -743,7 +798,6 @@ h2::after {
 .texto-cabeçalho-pagamentos {
    margin-top: 70px;
    margin-bottom: 0px;
-   text-align: left;
    font-size: 30px;
    font-weight: 500;
    font-family: sans-serif;
