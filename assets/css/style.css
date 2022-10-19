@@ -70,21 +70,26 @@ h2::after {
     display: flex;
     position: relative;
     width: 100%;
-    background-color: var(--cor-tercearia);
+    background-color:white;
 }
 
 .links-menu ul li a {
-    font-size: 13px;
+    font-size: 12px;
     font-family:sans-serif;
     font-style: italic ;
     font-weight: 600;
     text-transform: uppercase;
+    border-radius: 5px;
+    color: #191919;
 }
- li:hover {
+
+.links-menu ul li a:hover {
     cursor: pointer;
     opacity: 0,8;
-    background-color: rgb(243, 243, 243);
-    transition: all 0,5s;
+    background-color: #191919;
+    color: white;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
  }
 
 .logo a {
@@ -95,7 +100,6 @@ h2::after {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 
 .links {
     width: 60%;
@@ -118,7 +122,7 @@ h2::after {
     position: relative;
     width: 20%;
     height: 70px;
-    background: var(--cor-secundaria);
+    background: rgba(255, 245, 245, 0.952);
     float: right;
     justify-content: right;
     cursor: pointer;
@@ -129,7 +133,7 @@ h2::after {
 }
 
 .img-button-menu {
-    background: var(--cor-tercearia);
+    background: white;
     max-width: 60px;
     max-height: 70px;
     justify-content: center;   
@@ -174,7 +178,7 @@ h2::after {
     border: 1px solid;
     border-radius: 10px;
     align-items: center;
-    background: var(--cor-tercearia);
+    background: white;
 }
 
 .pesquisa-txt {
@@ -184,14 +188,14 @@ h2::after {
     cursor:text;
     border: transparent;
     max-width: 200px;
-    background: var(--cor-tercearia);
+    background: white;
 }
 
 .lupa {
     display:flex;
     position: relative;
     float: left;
-    background: var(--cor-tercearia);
+    background: white;
     cursor: pointer;
     max-width: 40px;
     padding-right: 10px;
@@ -220,7 +224,6 @@ h2::after {
     width:30px;
     height:30px;
     margin: auto;
-    
 }
 
 .button-login {
@@ -231,6 +234,36 @@ h2::after {
     margin: auto;
     text-decoration: none;
     cursor: pointer;
+}
+
+.fechar-login {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.fechar-login:hover {
+    transform: rotate(180deg);
+    transition: transform 600ms ease-in-out;
+}
+
+.botao-fechar-login {
+    margin: auto;
+    width: 15px;
+    height: 15px;
+}
+
+.conteiner-login {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
 }
 
 .img-User-login {
@@ -248,58 +281,59 @@ h2::after {
 
 .entrar-login {
     display: none;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(151, 151, 151, 0.5)
 }
 
-.botao-checar-login:checked + .entrar-login {
-    display: block;
-    width: 300px;
-    height: 200px;
-    float: right;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, .1);
+.email-login {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: auto;
 }
 
 .seuemail {
-    margin-top: 30px;
-    padding-left: 70px;
+    margin:auto;
 }
 
 .seuemail-login {
-    height: 25px;
+    width: 200px;
+    height: 30px;
     border: 1px solid black;
     border-radius: 3px;
     font-family: sans-serif;
 }
 
 .suasenha {
-    margin-top: 30px;
-    padding-left: 70px;
+    margin:auto;
 }
 
 .suasenha-login {
-    height: 25px;
+    width: 200px;
+    height: 30px;
     border: 1px solid black;
     border-radius: 3px;
     font-family: sans-serif;
 }
 
 .botaologin-enviar {
-    margin-top: 40px;
-    padding-left: 110px;
+    margin:auto;
 }
 
 .login-enviar {
-    width: 100px;
-    height: 25px;
+    width: 150px;
+    height: 30px;
     border-radius: 3px;
     background: #191919;
     font-family: sans-serif;
+    color: white;
+    cursor: pointer;
 }
 
-.login-enviar a {
-    text-decoration: none;
-    color: #ffffff;
-}
+
 
 .banner-loja {
     display: flex;
@@ -344,9 +378,28 @@ h2::after {
 }
 
 .grid-vendas {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     max-width: 200px;
     max-height: 250px;
+}
+
+.botao-comprar {
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 90px 30px;
+}
+
+.botao-comprar-agora {
+    width: 150px;
+    height: 40px;
+    background: #191919;
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;  
 }
 
 .img-vendas {
@@ -530,6 +583,7 @@ h2::after {
     background: white;
     color: #191919;
     cursor: pointer;
+    transition: 1s ease-in-out;
 }
 
 .button-email a {
@@ -541,14 +595,7 @@ h2::after {
     font-weight: 700;   
 }
 
-.button-email::after {
-    content: '';
-    display: block;
-    width: 150px;
-    height: 1px;
-    background: currentColor;
-    margin: 0 auto;
-}
+
 
 .conteiner-footer {
     display: grid;
@@ -1033,7 +1080,7 @@ h2::after {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        background: var(--cor-secundaria);
+        background: rgba(255, 245, 245, 0.952);
         transition: all 0.5s;
     }
     
@@ -1047,6 +1094,36 @@ h2::after {
         row-gap: 150px;
         justify-items: center;
         padding-bottom: 150px;
+    }
+
+    .grid-vendas {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        max-height: 250px;
+    }
+    
+    .botao-comprar {
+        display: none;
+        position: absolute;
+        text-align: center;
+        padding: 90px 30px;
+    }
+
+    .conteiner-club-mrman {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100vh;
+        background: #191919;
+    }
+
+    .texto-club-mrman {
+        display: block;
+        margin: 20px;
+        border-right: none;
+        border-bottom: 1px solid white;
+        overflow-y: auto;
     }
 
     .conteiner-footer {
@@ -1070,25 +1147,17 @@ h2::after {
     }
 
     .grid-vendas {
-        display: block;
-        max-width: 300px;
-        max-height: 350px;
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        max-height: 250px;
     }
-
-    .conteiner-club-mrman {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        height: 100vh;
-        background: #191919;
-    }
-
-    .texto-club-mrman {
-        display: block;
-        margin: 20px;
-        border-right: none;
-        border-bottom: 1px solid white;
-        overflow-y: auto;
+    
+    .botao-comprar {
+        display: none;
+        position: absolute;
+        text-align: center;
+        padding: 90px 30px;
     }
 
     .institucional-mobile {
