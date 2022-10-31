@@ -74,11 +74,9 @@ h2::after {
 }
 
 .links-menu ul li a {
-    font-size: 12px;
+    font-size: 15px;
     font-family:sans-serif;
-    font-style: italic ;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 700;
     border-radius: 5px;
     color: #191919;
 }
@@ -142,8 +140,8 @@ h2::after {
 .botton {
     text-decoration: none;
     color: black;
-    font-size: 15px;
-    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
     font-family: sans-serif;
 }
 
@@ -266,13 +264,16 @@ h2::after {
     border-radius: 5px;
 }
 
-.img-User-login {
+.User-login {
     display: flex;
     position: relative;
     float: right;
-    width: 30px;
+    width: 60px;
     height: 30px;
-    margin: auto;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .botao-checar-login {
@@ -352,7 +353,7 @@ h2::after {
 .conteiner-section {
     display: grid;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: auto;
     background: var(--cor-secundaria);
 }
@@ -371,7 +372,7 @@ h2::after {
     display: grid;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 15px;
     justify-items: center;
@@ -394,9 +395,10 @@ h2::after {
 .botao-comprar-agora {
     width: 150px;
     height: 40px;
-    background: #191919;
-    color: #fff;
-    font-weight: 600;
+    background: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: 700;
     font-family: sans-serif;
     text-transform: uppercase;
     cursor: pointer;  

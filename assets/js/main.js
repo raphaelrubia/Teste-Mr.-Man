@@ -97,4 +97,93 @@ GridVendas7.addEventListener('mouseout', function() {
    BotaoComprar7.style.display = 'none';
  });
 
- 
+ const GridVendas8 = document.querySelector('#grid-vendas8');
+   GridVendas8.addEventListener('mouseover', function() {
+ const BotaoComprar8 = document.querySelector('#botao-comprar8');
+   BotaoComprar8.style.display = 'flex';
+});
+GridVendas8.addEventListener('mouseout', function() { 
+   const BotaoComprar8 = document.querySelector('#botao-comprar8');
+   BotaoComprar8.style.display = 'none';
+ });
+
+ const GridVendas9 = document.querySelector('#grid-vendas9');
+   GridVendas9.addEventListener('mouseover', function() {
+ const BotaoComprar9 = document.querySelector('#botao-comprar9');
+   BotaoComprar9.style.display = 'flex';
+});
+GridVendas9.addEventListener('mouseout', function() { 
+   const BotaoComprar9 = document.querySelector('#botao-comprar9');
+   BotaoComprar9.style.display = 'none';
+ });
+
+ const GridVendas10 = document.querySelector('#grid-vendas10');
+ GridVendas10.addEventListener('mouseover', function() {
+const BotaoComprar10 = document.querySelector('#botao-comprar10');
+ BotaoComprar10.style.display = 'flex';
+});
+GridVendas10.addEventListener('mouseout', function() { 
+ const BotaoComprar10 = document.querySelector('#botao-comprar10');
+ BotaoComprar10.style.display = 'none';
+}); 
+
+const GridVendas11 = document.querySelector('#grid-vendas11');
+   GridVendas11.addEventListener('mouseover', function() {
+ const BotaoComprar11 = document.querySelector('#botao-comprar11');
+   BotaoComprar11.style.display = 'flex';
+});
+GridVendas11.addEventListener('mouseout', function() { 
+   const BotaoComprar11 = document.querySelector('#botao-comprar11');
+   BotaoComprar11.style.display = 'none';
+ });
+
+ const GridVendas12 = document.querySelector('#grid-vendas12');
+   GridVendas12.addEventListener('mouseover', function() {
+ const BotaoComprar12 = document.querySelector('#botao-comprar12');
+   BotaoComprar12.style.display = 'flex';
+});
+GridVendas12.addEventListener('mouseout', function() { 
+   const BotaoComprar12 = document.querySelector('#botao-comprar12');
+   BotaoComprar12.style.display = 'none';
+ });
+
+ const GridVendas13 = document.querySelector('#grid-vendas13');
+   GridVendas13.addEventListener('mouseover', function() {
+ const BotaoComprar13 = document.querySelector('#botao-comprar13');
+   BotaoComprar13.style.display = 'flex';
+});
+GridVendas13.addEventListener('mouseout', function() { 
+   const BotaoComprar13 = document.querySelector('#botao-comprar13');
+   BotaoComprar13.style.display = 'none';
+ });
+
+ const GridVendas14 = document.querySelector('#grid-vendas14');
+   GridVendas14.addEventListener('mouseover', function() {
+ const BotaoComprar14 = document.querySelector('#botao-comprar14');
+   BotaoComprar14.style.display = 'flex';
+});
+GridVendas14.addEventListener('mouseout', function() { 
+   const BotaoComprar14 = document.querySelector('#botao-comprar14');
+   BotaoComprar14.style.display = 'none';
+ });
+
+ const GridVendas15 = document.querySelector('#grid-vendas15');
+   GridVendas15.addEventListener('mouseover', function() {
+ const BotaoComprar15 = document.querySelector('#botao-comprar15');
+   BotaoComprar15.style.display = 'flex';
+});
+GridVendas15.addEventListener('mouseout', function() { 
+   const BotaoComprar15 = document.querySelector('#botao-comprar15');
+   BotaoComprar15.style.display = 'none';
+ });
+
+ const GridVendas16 = document.querySelector('#grid-vendas16');
+   GridVendas16.addEventListener('mouseover', function() {
+ const BotaoComprar16 = document.querySelector('#botao-comprar16');
+   BotaoComprar16.style.display = 'flex';
+});
+GridVendas16.addEventListener('mouseout', function() { 
+   const BotaoComprar16 = document.querySelector('#botao-comprar16');
+   BotaoComprar16.style.display = 'none';
+ });
+
