@@ -49,27 +49,37 @@ h2::after {
     background: currentColor;
     margin: 0 auto;
 }
-.menu-container {
+
+.menu-conteiner {
     display: block;
     position: fixed;
-    width: 100%;
-    height: 20px;
-    top: 0;
-    z-index: 1;   
-}
-
-.menu-principal {
-    display: block;
-    position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 70px;
 }
 
 .menu-principal-links {
     display: flex;
-    position: relative;
-    width: 100%;
+    position: fixed;
     background-color:white;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.links-menu {
+    height: 70px;
+    align-items: center;
+}
+
+.links-menu-category {
+    display: flex;
+    position: relative;
+    height: 70px;
+    padding: auto;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
 }
 
 .links-menu ul li a {
@@ -77,6 +87,7 @@ h2::after {
     font-family:sans-serif;
     font-weight: 700;
     border-radius: 5px;
+    
     color: #191919;
 }
 
@@ -87,38 +98,23 @@ h2::after {
     color: white;
     border-radius: 5px;
     transition: all 1s ease-in-out;
- }
-
-.logo a {
-    display: flex;
-    position: relative;
-    width: 20px;
-    height: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
-.links {
-    width: 60%;
-    height: 60px;
-    align-items: center;
-}
-
-.links-menu-category {
+.logo {
     display: flex;
     position: relative;
-    padding-top: 20px;
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-between;
-    
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .button-menu {
     display: none;
     position: relative;
-    width: 20%;
-    height: 70px;
     background: rgba(255, 245, 245, 0.952);
     float: right;
     justify-content: right;
@@ -159,7 +155,6 @@ h2::after {
 .caixa-pesquisa-txt {
     display: flex;
     position: relative;
-    max-width: 250px;
     max-height: 20px;
 }
 
@@ -209,28 +204,37 @@ h2::after {
 .img-carrinho{
     display: flex;
     position: relative;
-    max-width: 100%;
-    max-height: 40px;
     margin: auto;
-    text-decoration: none;
+    padding-right: 10px;
 }
 
 .img-carrinho-compra {
     display: flex;
     position: relative;
-    width:30px;
-    height:30px;
+    max-width:30px;
+    max-height:30px;
     margin: auto;
 }
 
 .button-login {
     display: flex;
     position: relative;
-    max-width: 100%;
-    max-height: 40px;
     margin: auto;
     text-decoration: none;
     cursor: pointer;
+    justify-content: center;
+}
+
+.User-login {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 30px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .fechar-login {
@@ -261,18 +265,6 @@ h2::after {
     margin: auto;
     background: white;
     border-radius: 5px;
-}
-
-.User-login {
-    display: flex;
-    position: relative;
-    float: right;
-    width: 60px;
-    height: 30px;
-    padding-top: 10px;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 15px;
 }
 
 .botao-checar-login {
@@ -333,20 +325,64 @@ h2::after {
     cursor: pointer;
 }
 
-
-
-.banner-loja {
-    display: flex;
-    position: relative;
+.banner-conteiner {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.conteiner-slide-banner {
+    display: flex;
+    width: 100%;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: 90vh;
 }
 
 .img-banner-loja {
+    max-width: 1600px;
+    height: 100%;    
+    transition: all 1s ease-in-out;
+    object-fit: cover;   
+}
+
+.navegacao-banner {
     display: flex;
-    position: relative;
+    position: absolute;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
+    margin-top: 600px;
+}
+
+.navegacao-banner-btn {
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.conteiner-slide-banner input {
+    display: none;
+}
+
+#btn1:checked ~ .first {
+    margin-left: 0;
+}
+
+#btn2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#btn3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#btn4:checked ~ .first {
+    margin-left: -300%;
 }
 
 .conteiner-section {
@@ -1369,30 +1405,31 @@ h2::after {
         position: fixed;
         width: 100%;
         height: 70px;
+        justify-content: space-around;
     }
 
     .logo {
         display: flex;
         position: relative;
-        margin-right: auto;
+        margin-right: 15px;
         order: 1;
     }
 
     .caixa-pesquisa {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 15px;
+        margin-right: 15px;
         order: 2;
     }
 
     .img-carrinho {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 15px;
+        margin-right: 15px;
         order: 3;
     }
 
     .button-login {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 15px;
+        margin-right: 15px;
         order: 4;
     }
 
@@ -1400,14 +1437,14 @@ h2::after {
         display: flex;
         position: relative;
         width: 60px;
-        margin-left: auto;
+        margin-left: 15px;
         order: 5;
     }
 
     .links {
         display: block;
         position: relative;
-        width: 1%;
+        max-width: 1%;
         height: 70px;
         margin: 0;
         order: 6;
@@ -1486,8 +1523,22 @@ h2::after {
        
     .mobile {
         display: flex;
+        justify-content: center;
     }
+
 @media (max-width: 600px) {
+    .menu-principal-links {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .caixa-pesquisa {
+        display: none;
+    }
+
     .conteiner {
         display: grid;
         position: relative;
