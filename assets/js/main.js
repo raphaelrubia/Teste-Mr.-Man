@@ -25,8 +25,26 @@ FecharLogin.addEventListener('click', function() {
 
 });
 
-// Evento mostrar botão COMPRAR AGORA
 
+//Evento banner carrossel
+let Contar = 1;
+document.getElementById("btn1").checked = true;
+
+function ProximaImagen(){
+  Contar++;
+  if(Contar > 4){
+    Contar = 1;
+  }
+
+  document.getElementById("btn"+Contar).checked = true;
+}
+
+setInterval (function(){
+  ProximaImagen();
+}, 3000)
+
+
+// Evento mostrar botão COMPRAR AGORA
 const GridVendas1 = document.querySelector('#grid-vendas1');
    GridVendas1.addEventListener('mouseover', function() {
 const BotaoComprar1 = document.querySelector('#botao-comprar1');
